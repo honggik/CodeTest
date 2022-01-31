@@ -8,9 +8,9 @@ namespace ConsoleTest0128
 {
 	class Lotto
 	{
-		static void Main()
+		static void Main(
 		{
-			int[] lottos = { 44, 1, 0, 0, 31, 25 };
+			int[] lottos = { 44, 1, 0, 0, 31, 25  };
 			int[] win_nums = { 31, 10, 45, 1, 6, 19 };
 
 			int[] answer = new int[] { };
