@@ -28,7 +28,7 @@ namespace ConsoleTest0128
 			Console.WriteLine();
 
 			//재귀함수
-			int inputNum;
+			int inputNum=default;
 			bool b = false;
 			while(!b)
 			{
