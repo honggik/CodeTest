@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleTest0128
 {
+    // 신고 결과 받기
 	class Report_results
 	{
         public static int[] solution(string[] id_list, string[] report, int k)
@@ -39,8 +40,12 @@ namespace ConsoleTest0128
 
                 // k 번 이상 신고당한 사람만 추려서 반복문 돌리고
                 // 해당 사람을 신고한 사람한테 메일 보낼 카운트 증가
+                // 딕셔너리를 value 조건?
+
                 foreach (var countLog in reportCountLog.Where((e) => e.Value >= k))
                 {
+                    //if(countLog.Value>=k)
+                    // 이런식으로 풀어도 되고 
                     foreach (var log in reportLog)
                     {
                         if (log.Value.Contains(countLog.Key))

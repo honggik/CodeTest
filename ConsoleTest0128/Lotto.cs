@@ -8,6 +8,7 @@ namespace ConsoleTest0128
 {
 	class Lotto
 	{
+		//로또
 		static void Main()
 		{
 			int[] lottos = { 44, 1, 0, 0, 31, 25  };
