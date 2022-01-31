@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Number_Eng</StartupObject>
+    <StartupObject>ConsoleTest0128.inner_product</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="inner_product.cs" />
     <Compile Include="Lotto.cs" />
+    <Compile Include="NotNUmber.cs" />
     <Compile Include="Number_Eng.cs" />
     <Compile Include="PrimeNumber.cs" />
     <Compile Include="Program.cs" />
