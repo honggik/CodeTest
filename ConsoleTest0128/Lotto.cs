@@ -43,6 +43,8 @@ namespace ConsoleTest0128
 				Console.WriteLine(i);
 			}
 
+			Solution();
+
 		}
 
 		static int Rank(int count)
@@ -72,6 +74,63 @@ namespace ConsoleTest0128
 
 			}
 			return rank;
+		}
+
+		static void Solution()
+		{
+			int[] lottos = { 44, 1, 0, 0, 31, 25 };
+			int[] win_nums = { 31, 10, 45, 1, 6, 19 };
+
+			int right = default;
+			int zeroCount = default;
+
+			int[] answer = new int[2];
+
+			//for (int i = 0; i < lottos.Length; i++)
+			//{
+			//	if (lottos[i] == 0)
+			//	{
+			//		zeroCount++;
+			//		continue;
+			//	}
+			//	for (int j = 0; j < win_nums.Length; j++)
+			//	{
+			//		if (lottos[i] == win_nums[j])
+			//		{
+			//			right++;
+			//			break;
+			//		}
+			//	}
+			//}
+
+			//이거와 다른점 구하기 
+			for (int i = 0; i < lottos.Length; i++)
+			{
+				if (lottos[i] == 0)
+				{
+					zeroCount++;
+					continue;
+				}
+				if (lottos[i] == win_nums[i])
+				{
+					right++;
+				}
+			}
+		    
+			
+			int max = 7 - (right + zeroCount);
+			int min = 7 - (right);
+			if (max >= 7)
+			{
+				max = 6;
+			}
+			if (min >= 7)
+			{
+				min = 6;
+			}
+			Console.WriteLine(max);
+			Console.WriteLine(min);
+
 		}
 	}
 }
