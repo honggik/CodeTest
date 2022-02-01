@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.inner_product</StartupObject>
+    <StartupObject>ConsoleTest0128.ternary_scale</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="divisor.cs" />
     <Compile Include="inner_product.cs" />
+    <Compile Include="K_Num.cs" />
     <Compile Include="Lotto.cs" />
     <Compile Include="NotNUmber.cs" />
     <Compile Include="Number_Eng.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="ramda.cs" />
     <Compile Include="Report_results.cs" />
     <Compile Include="Star.cs" />
+    <Compile Include="ternary_scale.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
