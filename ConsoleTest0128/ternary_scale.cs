@@ -53,6 +53,7 @@ namespace ConsoleTest0128
 		{
 			StringBuilder sb = new StringBuilder();
 			int current = number;
+			int answer = 0;
 
 			// 진법 변환할 숫자가 0보다 큰 경우 지속 진행
 			while (current > 0)
@@ -74,10 +75,51 @@ namespace ConsoleTest0128
 			}
 			Console.WriteLine("숫자 : " + number + "를 " + N + "진법으로 변환한 수 : " + sb.ToString());
 
+			var idx = sb.Length;
+			var sum = 0;
+			for (var i = 0; i < sb.Length; i++)
+			{
+				var pow = (int)Math.Pow(3, --idx);
+				answer += int.Parse(sb[i].ToString()) * pow;
+			}
+			Console.Write(answer);
+
+		}
+
+		static void Exam2()
+		{
+			int n = 45;
+			int answer = 0;
+			string str = "";
+
+			while (true)
+			{
+				var a = n / 3;
+				var b = n % 3;
+
+				n = a;
+				str += b.ToString();
+
+				if (n < 3)
+				{
+					str += a.ToString();
+					break;
+				}
+			}
+
+			var idx = str.Length;
+			var sum = 0;
+			for (var i = 0; i < str.Length; i++)
+			{
+				var pow = (int)Math.Pow(3, --idx);
+				answer += int.Parse(str[i].ToString()) * pow;
+			}
+			Console.Write(answer);
 		}
 		static void Main()
 		{
 			Exam(45,3);
+			Exam2();
 		}
 	}
 }
