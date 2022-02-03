@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.add_in_between</StartupObject>
+    <StartupObject>ConsoleTest0128.string_at_will</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,6 +66,7 @@
     <Compile Include="Report_results.cs" />
     <Compile Include="rest _1.cs" />
     <Compile Include="Star.cs" />
+    <Compile Include="string_at_will.cs" />
     <Compile Include="ternary_scale.cs" />
   </ItemGroup>
   <ItemGroup>
