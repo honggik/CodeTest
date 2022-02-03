@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.string_at_will</StartupObject>
+    <StartupObject>ConsoleTest0128.orderby_desc</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -58,6 +58,7 @@
     <Compile Include="middle_substring.cs" />
     <Compile Include="NotNUmber.cs" />
     <Compile Include="Number_Eng.cs" />
+    <Compile Include="orderby_desc.cs" />
     <Compile Include="Pirce.cs" />
     <Compile Include="PrimeNumber.cs" />
     <Compile Include="Program.cs" />
