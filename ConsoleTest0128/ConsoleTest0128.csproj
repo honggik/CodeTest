@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.orderby_desc</StartupObject>
+    <StartupObject>ConsoleTest0128.KIM</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,6 +53,7 @@
     <Compile Include="divisible_Array.cs" />
     <Compile Include="divisor.cs" />
     <Compile Include="inner_product.cs" />
+    <Compile Include="KIM.cs" />
     <Compile Include="K_Num.cs" />
     <Compile Include="Lotto.cs" />
     <Compile Include="middle_substring.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="rest _1.cs" />
     <Compile Include="Star.cs" />
     <Compile Include="string_at_will.cs" />
+    <Compile Include="string_false_true.cs" />
     <Compile Include="ternary_scale.cs" />
   </ItemGroup>
   <ItemGroup>
