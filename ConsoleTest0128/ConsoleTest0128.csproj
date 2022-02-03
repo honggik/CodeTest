@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.KIM</StartupObject>
+    <StartupObject>ConsoleTest0128.string_to_integer</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -70,6 +70,7 @@
     <Compile Include="Star.cs" />
     <Compile Include="string_at_will.cs" />
     <Compile Include="string_false_true.cs" />
+    <Compile Include="string_to_integer.cs" />
     <Compile Include="ternary_scale.cs" />
   </ItemGroup>
   <ItemGroup>
