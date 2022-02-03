@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Budget</StartupObject>
+    <StartupObject>ConsoleTest0128.Pirce</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2016.cs" />
     <Compile Include="2Num.cs" />
     <Compile Include="Budget.cs" />
+    <Compile Include="divisible_Array.cs" />
     <Compile Include="divisor.cs" />
     <Compile Include="inner_product.cs" />
     <Compile Include="K_Num.cs" />
     <Compile Include="Lotto.cs" />
     <Compile Include="NotNUmber.cs" />
     <Compile Include="Number_Eng.cs" />
+    <Compile Include="Pirce.cs" />
     <Compile Include="PrimeNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
