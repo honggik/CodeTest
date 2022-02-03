@@ -17,7 +17,7 @@ namespace ConsoleTest0128
 			int total = 0;
 			for (int i = 1; i <= count; i++)
 			{
-				total = total + count * i;
+				total = total + price * i;
 			}
 			if (money < total)
 			{
