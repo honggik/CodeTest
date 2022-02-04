@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.digit</StartupObject>
+    <StartupObject>ConsoleTest0128.flip_NaturalNum</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,6 +55,7 @@
     <Compile Include="digit.cs" />
     <Compile Include="divisible_Array.cs" />
     <Compile Include="divisor.cs" />
+    <Compile Include="flip_NaturalNum.cs" />
     <Compile Include="inner_product.cs" />
     <Compile Include="KIM.cs" />
     <Compile Include="K_Num.cs" />
