@@ -11,7 +11,7 @@ namespace ConsoleTest0128
 
 		static void Solution()
 		{
-			int num = 623331
+            int num = 623331;
 			int count = 0;
             int answer = 0;
 
