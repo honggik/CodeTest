@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Common_divisor_Common_Mutiple</StartupObject>
+    <StartupObject>ConsoleTest0128.Collatz</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,7 @@
     <Compile Include="add_in_between.cs" />
     <Compile Include="Alphabets.cs" />
     <Compile Include="Budget.cs" />
+    <Compile Include="Collatz.cs" />
     <Compile Include="Common divisor_Common_Mutiple.cs" />
     <Compile Include="create_Characters.cs" />
     <Compile Include="digit.cs" />
