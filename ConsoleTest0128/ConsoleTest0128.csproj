@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.create_Characters</StartupObject>
+    <StartupObject>ConsoleTest0128.digit</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +52,7 @@
     <Compile Include="Alphabets.cs" />
     <Compile Include="Budget.cs" />
     <Compile Include="create_Characters.cs" />
+    <Compile Include="digit.cs" />
     <Compile Include="divisible_Array.cs" />
     <Compile Include="divisor.cs" />
     <Compile Include="inner_product.cs" />
