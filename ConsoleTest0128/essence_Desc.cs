@@ -12,6 +12,8 @@ namespace ConsoleTest0128
 
 		static void Solution()
 		{
+
+			//정수를 내림차순으로 
 			char[] c = n.ToString().ToCharArray();
 			long answer = 0;
 

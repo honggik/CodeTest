@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.essence_Desc</StartupObject>
+    <StartupObject>ConsoleTest0128.Sqrt</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -72,6 +72,7 @@
     <Compile Include="ramda.cs" />
     <Compile Include="Report_results.cs" />
     <Compile Include="rest _1.cs" />
+    <Compile Include="Sqrt.cs" />
     <Compile Include="Star.cs" />
     <Compile Include="string_at_will.cs" />
     <Compile Include="string_false_true.cs" />
