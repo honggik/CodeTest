@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.string_to_integer</StartupObject>
+    <StartupObject>ConsoleTest0128.Alphabets</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="2016.cs" />
     <Compile Include="2Num.cs" />
     <Compile Include="add_in_between.cs" />
+    <Compile Include="Alphabets.cs" />
     <Compile Include="Budget.cs" />
     <Compile Include="divisible_Array.cs" />
     <Compile Include="divisor.cs" />
