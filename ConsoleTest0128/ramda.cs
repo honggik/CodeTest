@@ -21,7 +21,7 @@ namespace ConsoleTest0128
 			});
 			t2.Start();
 
-			//람다식
+			//람다식: 익명메서드와 델리게이트를 간략하게 표현이 가능하고 linq식에서도 간략하게 사용한다. 
 			Thread t3 = new Thread(() => Console.WriteLine("신규스레드 시작3"));
 			t3.Start();
 

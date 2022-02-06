@@ -9,6 +9,7 @@ namespace ConsoleTest0128
 	//3진법
 	class ternary_scale
 	{
+		// 다시 풀기 
 		//3진법을 통해서 => 10진수로 
 		static void Solution1()
 		{
