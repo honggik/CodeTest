@@ -9,6 +9,7 @@ namespace ConsoleTest0128
 	//3진법
 	class ternary_scale
 	{
+		//3진법을 통해서 => 10진수로 
 		static void Solution1()
 		{
 			int n = 45;
@@ -94,24 +95,24 @@ namespace ConsoleTest0128
 
 			while (true)
 			{
-				var a = n / 3;
-				var b = n % 3;
+				var a = n / 3; //15
+				var b = n % 3;// 0
 
-				n = a;
-				str += b.ToString();
+				n = a; //15 
+				str += b.ToString(); //0
 
-				if (n < 3)
+				if (n < 3) //15 
 				{
-					str += a.ToString();
+					str += a.ToString(); 
 					break;
 				}
 			}
 
-			var idx = str.Length;
+			var idx = str.Length;//1
 			var sum = 0;
 			for (var i = 0; i < str.Length; i++)
 			{
-				var pow = (int)Math.Pow(3, --idx);
+				var pow = (int)Math.Pow(3, --idx); // 
 				answer += int.Parse(str[i].ToString()) * pow;
 			}
 			Console.Write(answer);
