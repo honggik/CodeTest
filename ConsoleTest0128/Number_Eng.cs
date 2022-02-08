@@ -10,6 +10,7 @@ namespace ConsoleTest0128
 	{
         static void Soultion1()
         {
+            //문자를 영어로 
             string s = string.Empty;
             Console.Write("문자입력: ");
             s =  Console.ReadLine();
@@ -27,7 +28,8 @@ namespace ConsoleTest0128
             { "nine", "9" }
         };
 
-
+            //딕셔너리에 key와 value를저장하여 
+            //key값을 value값으로 출력
             foreach (var keyValuePair in numberDictionary)
             {
                 //이게 뭘까?
@@ -41,6 +43,7 @@ namespace ConsoleTest0128
         {
             string s = Console.ReadLine();
 
+           //바로 replace를 한다.
             s = s.Replace("zero", "0");
             s = s.Replace("one", "1");
             s = s.Replace("two", "2");
@@ -54,7 +57,10 @@ namespace ConsoleTest0128
 
             int k;
             int answer = 0;
+
+            //숫자가 맞는지 확인한다.
             bool bconvert = int.TryParse(s, out k);
+            //맞으면 출력 
             if (bconvert)
             {
                 answer = k;
