@@ -8,8 +8,10 @@ namespace ConsoleTest0128
 {
 	class add_in_between
 	{
+		//사잇수 더하기 
 		static void Solution1()
 		{
+
 			int a = 5;
 			int b = 4;
 			int answer = 0;
@@ -25,6 +27,25 @@ namespace ConsoleTest0128
 			{
 				answer = answer + i;
 			}
+			Console.WriteLine(answer);
+		}
+
+		static void Exam()
+		{
+			int a = 5;
+			int b = 4;
+			int answer = 0;
+
+			int max = a > b ? a : b;
+			int min = a < b ? a : b;
+
+			//두정수 사이값 구하기
+			for (int i = min; i <= max; i++)
+			{
+				answer = answer+ i;
+				
+			}
+			//두정수합구하기
 			Console.WriteLine(answer);
 		}
 		static void Main()
