@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Collatz</StartupObject>
+    <StartupObject>ConsoleTest0128.Common_divisor_Common_Mutiple</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
