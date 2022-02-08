@@ -50,6 +50,25 @@ namespace ConsoleTest0128
 			Console.WriteLine(answer);
 
 		}
+
+		static void EXAM1()
+		{
+			int n = 987;
+			string s = n.ToString();
+			char[] c = s.ToCharArray();
+			int answer = 0;
+			int answer2 = 0;
+			for (int i = 0; i < s.Length; i++)
+			{
+				// 그냥 컨버트해서 인트로변환하면 아스키코드로? 가는거같아 tostring을 해줌
+				// answer에 c[i]만큼 더해줌 
+				answer = answer + Convert.ToInt32(c[i].ToString());
+
+				//또다른방법 substirng
+				answer2 = answer2 + Convert.ToInt32(s.Substring(i, 1));
+			}
+			Console.WriteLine(answer);
+		}
 		static void Main()
 		{
 			Solution();
