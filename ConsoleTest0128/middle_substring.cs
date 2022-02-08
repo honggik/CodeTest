@@ -29,6 +29,22 @@ namespace ConsoleTest0128
 		
 
 		}
+
+		static void Exam()
+		{
+			string str1 = "qwer";
+			string answer = "";
+			if (str1.Length % 2 == 0)
+			{
+				int result = str1.Length / 2;
+				answer = str1.Substring(result - 1, 2);
+			}
+			if (str1.Length % 3 == 0)
+			{
+				double result = Math.Round((double)str1.Length / 2);
+				Console.WriteLine(str1.Substring((int)result / 1);
+			}
+		}
 		static void Main()
 		{
 			solution1();
