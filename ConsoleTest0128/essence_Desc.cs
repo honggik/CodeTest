@@ -14,12 +14,17 @@ namespace ConsoleTest0128
 		{
 
 			//정수를 내림차순으로 
+
+			//정수를 스트링 배열로 만들고 char배열로 쓴다.
 			char[] c = n.ToString().ToCharArray();
 			long answer = 0;
-
+			
+			//배열을 오름차순
 			Array.Sort(c);
+			//리버스는 sort하고해야지 내림차순 형태로 보여줄수있다.
 			Array.Reverse(c);
 
+			//char 배열을 스트링으로 바꾸고 인트형태로 출력 
 			answer = Convert.ToInt64(new string(c));
 
 			Console.WriteLine(answer);
@@ -59,6 +64,25 @@ namespace ConsoleTest0128
 			}
 			Console.WriteLine(str);
 		}
+
+		static void Exam1()
+		{
+			char[] c = n.ToString().ToCharArray();
+
+			//오름차순
+			Array.Sort(c);
+
+			//소트한상태에서는 reverse는 내림차순으로 출력
+			Array.Reverse(c);
+
+			long answer = 0;
+
+			answer = Convert.ToInt64(new string(c));
+			Console.WriteLine(answer);
+
+			
+		}
+
 
 		static void Main()
 		{
