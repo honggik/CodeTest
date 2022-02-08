@@ -42,7 +42,7 @@ namespace ConsoleTest0128
 			if (str1.Length % 3 == 0)
 			{
 				double result = Math.Round((double)str1.Length / 2);
-				Console.WriteLine(str1.Substring((int)result / 1);
+				Console.WriteLine(str1.Substring((int)result / 1));
 			}
 		}
 		static void Main()

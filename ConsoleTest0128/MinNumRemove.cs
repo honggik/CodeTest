@@ -56,10 +56,63 @@ namespace ConsoleTest0128
 
 		}
 
+		//람다식 풀이
+		static void exam1()
+		{
+			int[] arr = { 4, 3, 2, 1 };
+			int[] answer = new int[] { };
+
+			//arr이 사이즈가 1이면 
+			if (arr.Length <= 1)
+			{
+				answer = new int[] { -1 };
+			}
+			// arr 수 중에 가장작은수를 temp에 넣어라 
+			int temp = arr.Min();
+
+			//람다식 조회 => 배열타입으로 바꿔준다.
+			answer = arr.Select(x => x).Where(y => y != temp).ToArray();
+			foreach (int item in arr)
+			{
+				Console.Write(item + ",");
+			}
+		}
+
+		static void Exam2()
+		{
+			int[] arr = { 4, 3, 2, 1 };
+			List<int> answer = new List<int>(arr.ToList());// 배열 자체를 리스트에 복사
+
+			//list타입으로 받으면 list.sort 
+			// 배열타입이면 array.sotr(배열);
+			answer.Sort();
+
+			//list에 먼저 담자
+			//answer[0]을 제거하고 출력
+			answer.Remove(answer[0]);
+
+
+			answer.Reverse();
+
+			if (answer.Count <=1)
+			{
+				answer.Add(-1);
+			}
+
+			foreach (int item in answer)
+			{
+				Console.WriteLine(item);
+			}
+
+
+			
+		}
+
 		static void Main()
 		{
-			Exam();
-			RamdaExam();
+			//Exam();
+			//RamdaExam();
+			Exam2();
 		}
 	}
 }
