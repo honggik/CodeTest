@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.K_Num</StartupObject>
+    <StartupObject>ConsoleTest0128.Lotto</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

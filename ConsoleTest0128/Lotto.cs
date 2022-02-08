@@ -11,12 +11,24 @@ namespace ConsoleTest0128
 		//로또
 		static void Main()
 		{
-			int[] lottos = { 44, 1, 0, 0, 31, 25  };
-			int[] win_nums = { 31, 10, 45, 1, 6, 19 };
+
+			LottoExam1();
+
+			//Solution();
+
+			//Exam1();
+
+		}
+
+		static void LottoSolution1()
+		{
+			int[] lottos = { 44, 1, 0, 0, 31, 25 }; //나의 로또번호
+			int[] win_nums = { 31, 10, 45, 1, 6, 19 };//당첨번호
 
 			int[] answer = new int[] { };
 			int count = 0;
-			int zeroCount = 0;
+			int zeroCount = 0; // 0인것을 정답이라고 가정할떄 횟수 
+
 
 			foreach (int i in lottos)
 			{
@@ -28,9 +40,11 @@ namespace ConsoleTest0128
 
 				for (int j = 0; j < win_nums.Length; j++)
 				{
+
 					if (win_nums[j] == 0) continue;
 					if (win_nums[j] == i)
 					{
+						//0이 정답이라고 가정안할때 횟수 
 						count++;
 						win_nums[j] = 0;
 						break;
@@ -38,14 +52,48 @@ namespace ConsoleTest0128
 				}
 			}
 
-			answer = new int[] { Rank(count + zeroCount),Rank(count) };
+			answer = new int[] { Rank(count + zeroCount), Rank(count) };
 			foreach (int i in answer)
 			{
-				Console.WriteLine(i);
+				Console.Write(i + ",");
+			}
+		}
+
+		static void LottoExam1()
+		{
+			int[] lottos = { 44, 1, 0, 0, 31, 25 }; //나의 로또번호
+			int[] win_nums = { 31, 10, 45, 1, 6, 19 };//당첨번호
+
+			int[] answer = new int[] { };
+			int count = 0;
+			int zeroCount = 0; // 0인것을 정답이라고 가정할떄 횟수 
+
+
+			foreach (int i in lottos)
+			{
+				if (i == 0)
+				{
+					zeroCount++;
+					continue;
+				}
+
+				for (int j = 0; j < win_nums.Length; j++)
+				{
+
+					if (win_nums[j] == i)
+					{
+						//0이 정답이라고 가정안할때 횟수 
+						count++;
+						break;
+					}
+				}
 			}
 
-			Solution();
-
+			answer = new int[] { Rank(count + zeroCount), Rank(count) };
+			foreach (int i in answer)
+			{
+				Console.Write(i + ",");
+			}
 		}
 
 		static int Rank(int count)
@@ -117,8 +165,8 @@ namespace ConsoleTest0128
 					right++;
 				}
 			}
-		    
-			
+
+
 			int max = 7 - (right + zeroCount);
 			int min = 7 - (right);
 			if (max >= 7)
@@ -133,5 +181,12 @@ namespace ConsoleTest0128
 			Console.WriteLine(min);
 
 		}
+
+		static void Exam1()
+		{
+
+		
+		}
 	}
 }
+
