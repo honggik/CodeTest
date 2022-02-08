@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.MinNumRemove</StartupObject>
+    <StartupObject>ConsoleTest0128.Budget</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
