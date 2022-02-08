@@ -85,6 +85,7 @@ namespace ConsoleTest0128
 				}
 			}
 			Console.WriteLine(answer);
+		}
 			
 
 			static void Main()

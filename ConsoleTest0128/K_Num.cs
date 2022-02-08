@@ -79,10 +79,52 @@ namespace ConsoleTest0128
 				Console.Write(answer[n]+ "," );
 			}
 		}
+
+		static void EXAM1()
+		{
+			int[] array = { 1, 5, 2, 6, 3, 7, 4 };
+
+			int[,] commands = { { 2, 5, 3 }, { 4, 4, 1 }, { 1, 7, 3 } };
+
+			int[] answer = new int[commands.GetLongLength(0)];
+
+
+			for (int n = 0; n < answer.Length; n++)
+			{
+				//시작,끝점,인덱스에 값을 구함 
+				int i = commands[n, 0];
+				int		j = commands[n, 1];
+				int k = commands[n, 2];
+
+				//위에 두면 result가 계속 차인다.
+				//그래서 새롭게 생성을 꾸준히 해줘야함 
+				List<int> result = new List<int>();
+
+				//배열을 i에서 j번째만큼의 사이즈를 구해서 넣어야함
+				for (int jj = i - 1; jj < j; jj++)
+				{
+
+					result.Add(array[jj]);
+				}
+				//오름차순
+				result.Sort();
+				//anser[n]마다 result[k번째수를] 저장 
+				answer[n] = result[k-1];
+				
+			}
+			foreach (int item in answer)
+			{
+				Console.WriteLine(item);
+			}
+
+
+		}
 		static void Main()
 		{
 			//Solution1();
-			Exam();
+			//Exam();
+			Console.WriteLine(" ");
+			EXAM1();
 		}
 	}
 }

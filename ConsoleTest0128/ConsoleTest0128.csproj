@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.flip_NaturalNum</StartupObject>
+    <StartupObject>ConsoleTest0128.K_Num</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
