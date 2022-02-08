@@ -15,6 +15,10 @@ namespace ConsoleTest0128
 			int count = 4;
 
 			int total = 0;
+			//count는 4다
+			//4번 돌아야함
+			//돌때마다 i만큼 증가후 더하기 
+
 			for (int i = 1; i <= count; i++)
 			{
 				total = total + price * i;

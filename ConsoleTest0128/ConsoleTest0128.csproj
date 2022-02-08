@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Number_Eng</StartupObject>
+    <StartupObject>ConsoleTest0128.string_at_will</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

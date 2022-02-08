@@ -28,7 +28,7 @@ namespace ConsoleTest0128
 
 		static void Exam()
 		{
-			//람다식으로 구현
+			//람다식으로 구현 배열에 담고 orderbyDesending을 한고 배열상태로 출력 
 			string answer = new String(s.ToCharArray().OrderByDescending(x => x).ToArray());
 			Console.WriteLine(answer);
 		}

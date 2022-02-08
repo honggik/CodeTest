@@ -11,13 +11,16 @@ namespace ConsoleTest0128
 		static void Main()
 		{
 			//소수 구하기 
-			int tot = 2;
+			int tot = 6;
 			Console.Write("2 ");
+			//3부터 시작하고 2만큼 증가한다.
 			for (int i = 3; i < 1000; i += 2)
 			{
 				bool bPrime = true;
+				//i만큼 반복
 				for (int k = 1; k <= i; k++)
 				{
+					//소수는 자기수 나머지가 0인경우와 나머지가 1이
 					if (i % k == 0 && k != 1)
 					{
 						bPrime = false;

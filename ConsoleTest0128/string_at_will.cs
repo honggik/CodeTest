@@ -72,7 +72,8 @@ namespace ConsoleTest0128
 
 		static void Main()
 		{
-			Solution2();
+			//Solution2();
+			Solution1();
 			Console.WriteLine("exam");
 			Exam();
 
