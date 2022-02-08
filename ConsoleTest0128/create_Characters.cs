@@ -20,15 +20,18 @@ namespace ConsoleTest0128
 			{
 				if (s[i] == ' ')
 				{
+					//공백이면 t를넣고 
 					answer += s[i];
 					check = 0;
 					continue;
 				}
+				//짝수면 대문자로 
 				if (check % 2 == 0)
 				{
 					answer += s[i].ToString().ToUpper();
 					check++;
 				}
+				//홀수면 소문자로 
 				else
 				{
 					answer += s[i].ToString().ToLower();
@@ -69,6 +72,37 @@ namespace ConsoleTest0128
 				}
 			}
 			Console.WriteLine(answer);
+		}
+
+		static void EXAM1()
+		{
+			int check = 0;
+			string answer = string.Empty;
+
+			for (int i = 0; i < s.Length; i++)
+			{
+				if (s[i] == ' ')
+				{
+					answer = answer + s[i].ToString();
+					check = 0;// check를 0으로 초기화 후 반복문으로 돌리기
+					break;
+				}
+				//check가 짝수일때
+				if (check % 2 == 0)
+				{
+					answer += s[i].ToString().ToUpper();
+					check++;
+				}
+				//홀수일때
+				else
+				{
+					answer += s[i].ToString().ToLower();
+					check++;
+				}
+			}
+			Console.WriteLine(answer);
+
+
 		}
 		static void Main()
 		{
