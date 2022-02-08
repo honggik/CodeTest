@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Budget</StartupObject>
+    <StartupObject>ConsoleTest0128.Collatz</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
