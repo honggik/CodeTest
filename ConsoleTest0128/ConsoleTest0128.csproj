@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.string_at_will</StartupObject>
+    <StartupObject>ConsoleTest0128.Mobile</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -59,12 +59,14 @@
     <Compile Include="divisor.cs" />
     <Compile Include="essence_Desc.cs" />
     <Compile Include="flip_NaturalNum.cs" />
+    <Compile Include="Harshard_Number.cs" />
     <Compile Include="inner_product.cs" />
     <Compile Include="KIM.cs" />
     <Compile Include="K_Num.cs" />
     <Compile Include="Lotto.cs" />
     <Compile Include="middle_substring.cs" />
     <Compile Include="MinNumRemove.cs" />
+    <Compile Include="Mobile.cs" />
     <Compile Include="NotNUmber.cs" />
     <Compile Include="Number_Eng.cs" />
     <Compile Include="orderby_desc.cs" />
