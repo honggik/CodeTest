@@ -46,6 +46,7 @@ namespace ConsoleTest0128
 				}
 			}
 			answer1.Sort();
+			//중복없애기 
 			int[] list = answer1.Distinct().ToArray();
 			foreach (int item in list)
 			{
@@ -65,6 +66,7 @@ namespace ConsoleTest0128
 				for (int j = i + 1; j < num.Length; j++)
 				{
 					int temp = num[i] + num[j];
+					//중복없애기 
 					if (answerList.Contains(temp) == false)
 					{
 						answerList.Add(temp);
@@ -76,6 +78,63 @@ namespace ConsoleTest0128
 			foreach(int item in answerList)
 			{
 				Console.Write(item + ",");
+			}
+		}
+
+		static void exam1()
+		{
+			int[] num = { 2, 3, 3, 5, 6, 4, 5, 7 };
+
+			//list에 담기위해서 
+			List<int> answerList = new List<int>();
+
+			for (int i = 0; i < num.Length; i++)
+			{
+				//i보다 앞서있어야지 더할수있으니
+				for (int j = i + 1; j < num.Length; j++)
+				{
+					//합구하기
+					int temp = num[i] + num[j];
+					//중복된거 확인하기 
+					if (answerList.Contains(temp) == false)
+					{
+						answerList.Add(temp);
+					}
+				}
+			}
+			answerList.Sort();
+			foreach (int item in answerList)
+			{
+				Console.WriteLine(item);
+			}
+
+		}
+		static void exam2()
+		{
+			int[] num = { 2, 3, 3, 5, 6, 4, 5, 7 };
+
+			//list에 담기위해서 
+			List<int> answerList = new List<int>();
+
+			// 이중 for문을 돌린다. 첫번째는 numbers.Length-1까지다.
+			for (int i = 0; i < num.Length - 1; i++)
+			{
+				// 두번째 for문은 i+1 번 부터 시작한다.
+				for (int j = i + 1; j < num.Length; j++)
+				{
+					// i번째와 j번째를 더해서 temp에 담는다.
+					int temp = num[i] + num[j];
+					//리스트에 temp넗음
+					answerList.Add(temp);
+				}
+			}
+			answerList.Sort();
+
+			//중복없애기 
+			answerList.Distinct().ToArray();
+			foreach (int item in answerList)
+			{
+				Console.Write(item + " ,");
 			}
 		}
 
