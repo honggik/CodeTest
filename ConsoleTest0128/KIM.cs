@@ -33,6 +33,14 @@ namespace ConsoleTest0128
 
 			Console.WriteLine($"김서방은{index}에 있다.");
 		}
+
+		static void Exam2()
+		{
+			string[] seoul = new string[] { "Lee", "Kim" };
+			//람다식 인덱스를 구하는것 (kim은 몇번째에있는지)
+			int index = Array.FindIndex(seoul, x => x == "Kim");
+
+		}
 		static void WaterMelon()
 		{
 			//수박수박수
@@ -55,6 +63,27 @@ namespace ConsoleTest0128
 
 		}
 
+		//수박 exam
+		static void Exam4()
+		{
+			string answer = "";
+			int n = 4;
+
+			for (int i = 1; i <= n; i++)
+			{
+				if (i % 2 == 0)
+				{
+					answer = answer + "박";
+				}
+				else
+				{
+					answer = answer + "수";
+
+				}
+			}
+			Console.WriteLine(answer);
+
+		}
 		static void Main()
 		{
 			Solution();
