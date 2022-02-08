@@ -44,6 +44,9 @@ namespace ConsoleTest0128
 		static void WaterMelon()
 		{
 			//수박수박수
+			//n이 입력됐을때 
+			// 그갯수만큼 돌리기
+			//for문을 1에서 4만큼 돌리면된다.
 			int n = 4;
 			string answer = string.Empty;
 

@@ -86,7 +86,7 @@ namespace ConsoleTest0128
 
 			int[,] commands = { { 2, 5, 3 }, { 4, 4, 1 }, { 1, 7, 3 } };
 
-			int[] answer = new int[commands.GetLongLength(0)];
+			int[] answer = new int[commands.GetLongLength(0)];//answer은 commands에 사이즈에 맞게
 
 
 			for (int n = 0; n < answer.Length; n++)
@@ -101,14 +101,17 @@ namespace ConsoleTest0128
 				List<int> result = new List<int>();
 
 				//배열을 i에서 j번째만큼의 사이즈를 구해서 넣어야함
+				//예를들어섯 2.5이면 
+				//배열상에서는 1에서4까지만 구하면된다.
 				for (int jj = i - 1; jj < j; jj++)
 				{
-
+					//result에 원본 array[1]에서 array[4]까지 담는다. ex)
 					result.Add(array[jj]);
 				}
 				//오름차순
 				result.Sort();
 				//anser[n]마다 result[k번째수를] 저장 
+				//answer[0] = result의 k번째수를 저장 
 				answer[n] = result[k-1];
 				
 			}

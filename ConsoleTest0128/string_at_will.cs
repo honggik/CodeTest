@@ -21,6 +21,7 @@ namespace ConsoleTest0128
 
 			for (int i = 0; i < str.Length; i++)
 			{
+				//ex) abce,c 이런 값으로 나옴
 				dic.Add(str[i], str[i][n].ToString());
 			}
 			//사전순으로 정렬 

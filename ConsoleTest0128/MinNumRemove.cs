@@ -13,19 +13,25 @@ namespace ConsoleTest0128
 			//최소 자릿수 제거하기 
 			int[] arr = new int[] { 4, 3, 2, 1 };
 
+			//리스트에 arr을 복사 
 			List<int> b1 = arr.ToList();
+			//오름차순
 			b1.Sort();
-
+			//제일 첫번째의 값을 제거 
 			b1.Remove(b1[0]);
 
+			//reverse: 내림차순으로 출력됨 
 			b1.Reverse();
 
+			//하지만 count가 없다 하면 
 			if (b1.Count == 0)
 			{
+
 				foreach (int item in b1)
 				{
 					b1.RemoveAt(item);
 				}
+				//-1을 제거 
 				b1.Add(-1);
 			}
 
@@ -45,7 +51,7 @@ namespace ConsoleTest0128
 			}
 			int temp = arr.Min();
 
-			//배열상태
+			//배열상태 람다식으로 표현 
 			answer = arr.Select(x => x).Where(y => y != temp).ToArray();
 
 			foreach (int item in answer)

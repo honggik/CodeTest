@@ -39,6 +39,7 @@ namespace ConsoleTest0128
 			}
 			//nuber 배열의 합을구하고 
 			// answer과 num합을 뺌
+			//number.Sum()은 number 배열의 합 
 			answer = answer - numbers.Sum();
 
 			Console.WriteLine(answer);

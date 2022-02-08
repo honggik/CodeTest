@@ -22,10 +22,11 @@ namespace ConsoleTest0128
 				{
 					//공백이면 t를넣고 
 					answer += s[i];
+					// check 0으로 초기화
 					check = 0;
 					continue;
 				}
-				//짝수면 대문자로 
+				//짝수면 대문자로 (check기준)
 				if (check % 2 == 0)
 				{
 					answer += s[i].ToString().ToUpper();

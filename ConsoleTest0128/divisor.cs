@@ -11,21 +11,29 @@ namespace ConsoleTest0128
 		public static void Solution1()
 		{
 			//약수 덧셈 
+			//13에서 17까지의 약수갯수들 더하기 
+
 			int left = 13;
 			int right = 17;
 				int count = 0;
 				int result = 0;
 				for (int i = left; i <= right; i++)
 				{
+					//i까지의 약수를 구하고 
+					
 					for (int n = 1; n <= i; n++)
 					{
 						if (i % n == 0)
 						{
+						//약수의 갯수를 구함 
 							count++;
 						}
 					}
+					//약수갯수가 짝수면 
 					if (count % 2 == 0)
 					{
+						//더해주고 마지막에 횟수를 초기화한다
+						// 초기화해야지 다음 갯수도 정확해진ㄷ.
 						result = result + i;
 						count = 0;
 					}

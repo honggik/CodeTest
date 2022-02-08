@@ -16,6 +16,7 @@ namespace ConsoleTest0128
 			int result = 0;
 			for (int i = 0; i < a.Length; i++)
 			{
+				//내적 a[0]*b[0] 
 				result = result + a[i] * b[i];
 			}
 			return result;

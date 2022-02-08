@@ -28,6 +28,7 @@ namespace ConsoleTest0128
 				//가장 작은값이 예산에 허용된다면 추가
 				if (budgetNow + d[i] <= budget)
 				{
+					//횟수추가 
 					answer++;
 					budgetNow += d[i];
 				}

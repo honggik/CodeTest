@@ -8,6 +8,7 @@ namespace ConsoleTest0128
 {
 	class orderby_desc
 	{
+		//문자열 내림차순 
 		static string s = "Zbcdefg";
 		static void Solution()
 		{

@@ -61,11 +61,13 @@ namespace ConsoleTest0128
 
 		static void LottoExam1()
 		{
+			//맞춘순위를 구하는것임 
+
 			int[] lottos = { 44, 1, 0, 0, 31, 25 }; //나의 로또번호
 			int[] win_nums = { 31, 10, 45, 1, 6, 19 };//당첨번호
 
 			int[] answer = new int[] { };
-			int count = 0;
+			int count = 0; //그냥 맞춘수 
 			int zeroCount = 0; // 0인것을 정답이라고 가정할떄 횟수 
 
 
@@ -73,13 +75,16 @@ namespace ConsoleTest0128
 			{
 				if (i == 0)
 				{
+					//i===0일때 다 맞다고 가정하고
+					//zerocount에 더해준다.
 					zeroCount++;
 					continue;
 				}
-
+				//그후에 i에 해당하는값마다
+				//j를 비교함 
 				for (int j = 0; j < win_nums.Length; j++)
 				{
-
+					//비교 맞으면 0을 제외한 맞춘수가 증가됨 
 					if (win_nums[j] == i)
 					{
 						//0이 정답이라고 가정안할때 횟수 
@@ -88,7 +93,7 @@ namespace ConsoleTest0128
 					}
 				}
 			}
-
+			//rank는 맞춘횟수에서 순위를 구하는 case문 
 			answer = new int[] { Rank(count + zeroCount), Rank(count) };
 			foreach (int i in answer)
 			{

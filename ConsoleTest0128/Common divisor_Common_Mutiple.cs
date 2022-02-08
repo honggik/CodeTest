@@ -22,7 +22,9 @@ namespace ConsoleTest0128
 			while (true)
 			{
 				a = max % min; //나머지를구하고 
-				max = min;
+				max = min; //MAX를 MIN에 저장 
+				
+				//a는 0일때 돌아온다.
 				if (a  == 0)
 				{
 					break;
