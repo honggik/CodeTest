@@ -37,7 +37,48 @@ namespace ConsoleTest0128
 			Console.WriteLine($" => {tot}");
 			Console.ReadLine();
 		}
+
+		static void Exam1()
+		{
+
+
+			bool flag = true;
+
+			for (int i = 2; i <= 100; i++)
+
+			{
+
+				for (int j = 2; j < i; j++)
+
+				{
+
+					if (i % j == 0)
+
+					{
+
+						flag = false;
+
+					}
+
+				}
+
+				if (flag == true)
+
+				{
+
+					Console.Write("{0} ", i);
+
+				}
+
+				flag = true;
+
+			}
+
+			Console.WriteLine();
+		}
+
+		
 	}
-
-
 }
+
+

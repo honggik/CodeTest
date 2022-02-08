@@ -26,7 +26,7 @@ namespace ConsoleTest0128
 				//3,6,9,12 더해서 total을 가지고온다.
 				total = total + price * i;
 			}
-			total이 크면 
+			//total이 크면 
 			if (money < total)
 			{
 				Console.WriteLine(total - money);
