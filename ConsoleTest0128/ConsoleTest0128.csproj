@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleTest0128.Mobile</StartupObject>
+    <StartupObject>ConsoleTest0128.Matrix</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -64,6 +64,7 @@
     <Compile Include="KIM.cs" />
     <Compile Include="K_Num.cs" />
     <Compile Include="Lotto.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="middle_substring.cs" />
     <Compile Include="MinNumRemove.cs" />
     <Compile Include="Mobile.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="string_false_true.cs" />
     <Compile Include="string_to_integer.cs" />
     <Compile Include="ternary_scale.cs" />
+    <Compile Include="x.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
