@@ -8,6 +8,9 @@ namespace ConsoleTest0128
 {
 	class _2Num
 	{
+		/// <summary>
+		/// //
+		/// </summary>
 		static void Solution()
 		{
 			int[] number = { 2, 1, 3, 4, 1 };
