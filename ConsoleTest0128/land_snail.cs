@@ -19,6 +19,8 @@ namespace ConsoleTest0128
 			int b = int.Parse(Console.ReadLine());// 밤
 			int v = int.Parse(Console.ReadLine());// 나무길이 
 
+
+
 			
 
 		}
